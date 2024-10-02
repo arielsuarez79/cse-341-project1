@@ -1,0 +1,33 @@
+//LOCALHOST
+###get all users
+GET http://localhost:3000/Users
+
+###get user by id
+GET http://localhost:3000/Users/66fb664cde15a0bd030e4b88
+
+### Create new user
+POST http://localhost:3000/Users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"Mark",
+    "lastName":"Suarez", 
+    "email":"mateosuarez13@hotmail", 
+    "favoriteColor":"red",
+    "birthday": "2013-09-28"
+}
+
+### PUT User
+PUT http://localhost:3000/Users/66fb664cde15a0bd030e4b88
+
+
+ontent-Type: application/json
+
+{
+    "firstName":"Andres",
+    "lastName":"Suarez", 
+    "email":"andressuarez13@hotmail", 
+    "favoriteColor":"red",
+    "birthday": "2013-09-28"
+}
+
