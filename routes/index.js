@@ -3,7 +3,7 @@ const router = require("express").Router();
 router.use("/", require("./swagger"));
 
 router.get("/", (req, res) => {
-  //#swaggwe.tags=['Hello World']
+  //#swaggwe.tags=['Hello d']
   res.send("Hello World!");
 });
 
